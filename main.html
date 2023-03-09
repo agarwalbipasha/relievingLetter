@@ -38,15 +38,15 @@
       >
         Relieving Letter
       </h4>
-      <p>24 February 2023</p>
+      <p>{{ date }}</p>
 
-      <p>Dear Name,</p>
+      <p>Dear {{ name }},</p>
 
       <p>
-        We confirm that you have worked with us from trainingStartDate to
-        deploymentEndDate. Of the aforementioned period, you were a trainee from
-        trainingStartDate to trainingEndDate and were employed as a Software
-        Development Engineer from deploymentStartDate to deploymentEndDate. Your
+        We confirm that you have worked with us from {{ trainingStartDate }} to
+        {{ deploymentEndDate }}. Of the aforementioned period, you were a trainee from
+        {{ trainingStartDate }} to {{ trainingEndDate }} and were employed as a Software
+        Development Engineer from {{ deploymentStartDate}} to {{ deploymentEndDate}}. Your
         last designation in the organization was Software Development Engineer.
       </p>
 
@@ -59,7 +59,7 @@
       </p>
 
       <p>
-        During your employment, you were deployed with our customers company.
+        During your employment, you were deployed with our customers {{ company }}.
         Your performance and conduct there was found to be good.
       </p>
 
